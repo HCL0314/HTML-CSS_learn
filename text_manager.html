@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务管理器静态界面</title>
+    <link rel="stylesheet" href="./text_manager.css">
+</head>
+<body>
+    <h1 style="text-align: center">任务管理器</h1>
+        <div class="action-bar">
+            <form class="add-task">
+                <input type="text" placeholder="请输入内容">
+                <select>
+                    <option value="high">高优先级</option>
+                    <option value="low">低优先级</option>
+                </select>
+                <button type="button">新增任务</button>
+            </form>
+            <div class="search-area">
+            <span>按状态查找</span>
+            <select>
+                <option value="">已完成</option>
+                <option value="">未完成</option>
+            </select>
+            <button>查询</button>
+            </div>
+        </div>
+    <table class="table">
+        <tr>
+            <th>序号</th>
+            <th>任务内容</th>
+            <th>状态</th>
+            <th>优先级</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>学html css</td>
+            <td>
+                <form action="">
+                <label for="">
+                    <input type="radio" name="condition">已完成
+                </label>
+                <label for="">
+                    <input type="radio" name="condition">未完成
+                </label>
+            </form>
+            </td>
+            <td>高</td>
+            <td>
+            <button>删除</button>
+            <button>编辑</button>
+        </td>
+        </tr>
+    </table>
+</body>
+</html>

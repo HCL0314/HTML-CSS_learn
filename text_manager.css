@@ -1,0 +1,35 @@
+.table{
+    border-collapse: collapse;
+    width:100%;
+    margin-top: 20px;
+}
+.table th,td{
+    border:1px solid #5d5d5d;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table th{
+    height: 50px;
+}
+.table td{
+    padding:10px;
+}
+td button,td label{
+    margin:10px 10px;
+}
+.list button{
+    margin-right: 20px;
+}
+.action-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.add-task,.search-area{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
