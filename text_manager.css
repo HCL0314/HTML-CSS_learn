@@ -33,3 +33,11 @@ td button,td label{
     gap:10px;
     align-items: center;
 }
+.edit_input{
+    border:1px solid blue;
+    outline:none;
+    width:90%;
+}
+.condition{
+    margin-right:10px;
+}

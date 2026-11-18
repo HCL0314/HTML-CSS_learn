@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>任务管理器静态界面</title>
     <link rel="stylesheet" href="./text_manager.css">
+    <script src="./text_manager.js" defer></script>
 </head>
 <body>
     <h1 style="text-align: center">任务管理器</h1>
         <div class="action-bar">
-            <form class="add-task">
+            <form class="add-task" id="add_task">
                 <input type="text" placeholder="请输入内容">
                 <select>
                     <option value="high">高优先级</option>
                     <option value="low">低优先级</option>
                 </select>
-                <button type="button">新增任务</button>
+                <button type="button" onclick="add_task(this)">新增任务</button>
             </form>
             <div class="search-area">
             <span>按状态查找</span>
-            <select>
-                <option value="">已完成</option>
-                <option value="">未完成</option>
+            <select id="select_status">
+                <option value="已完成">已完成</option>
+                <option value="未完成">未完成</option>
+                <option value="全部">全部</option>
             </select>
-            <button>查询</button>
+            <button onclick="select_row(this)">查询</button>
             </div>
         </div>
-    <table class="table">
+    <table class="table" id="table_task">
         <tr>
             <th>序号</th>
             <th>任务内容</th>
@@ -49,8 +51,8 @@
             </td>
             <td>高</td>
             <td>
-            <button>删除</button>
-            <button>编辑</button>
+            <button onclick="deleterow(this)">删除</button>
+            <button onclick="editrow(this)">编辑</button>
         </td>
         </tr>
     </table>
